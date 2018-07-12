@@ -25,15 +25,11 @@
                     <span class="text-muted">Toggleable via the navbar brand.</span>
                 </div>
             </div>
-            <nav class="navbar">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fas fa-align-left"></span>
-          </button>
-            </nav>
         </div>
     </header>
 
     <div id="carouselMain" class="carousel slide carousel-fade" data-ride="carousel">
+        <button class="navbar-toggler btn-reverse" id="navbarToggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="fas fa-bars"></span> <strong>MENU</strong><div class="bees bees-start"><span></span></div></button>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="img/bg/1.png" alt="Slide Image">
@@ -44,51 +40,104 @@
         </div>
     </div>
     <main>
-        <div class="container-fluid contact-us">
-            <div class="row">
-                <div class="col-4">
+        <section class="container-fluid contact-us">
+            <div class="row text-center">
+                <div class="col-md-4 col-xs-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">
-                                WhatsApp 24x7
-                                <div class="bees bees-end"><span></span></div>
-                            </h5>
-                            <p class="card-text">We are available for consultancy 24x7 over WhatsApp. Drop a message anytime.</p>
-                            <a href="#" class="btn btn-primary">WhatsApp Contact</a>
+                            <h5 class="card-title"><span class="fas fa-clock"></span> No Waiting Time</h5>
+                            <p class="card-text">No more standing in long queues with your child.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-xs-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">
-                                WhatsApp 24x7
-                                <div class="bees bees-end"><span></span></div>
-                            </h5>
+                            <h5 class="card-title"><span class="fab fa-whatsapp"></span> WhatsApp 24x7</h5>
                             <p class="card-text">We are available for consultancy 24x7 over WhatsApp. Drop a message anytime.</p>
-                            <a href="#" class="btn btn-primary">WhatsApp Contact</a>
+                            <a href="https://api.whatsapp.com/send?phone=919974063616" class="btn btn-primary">WhatsApp Contact</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-xs-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">
-                                WhatsApp 24x7
-                                <div class="bees bees-end"><span></span></div>
-                            </h5>
-                            <p class="card-text">We are available for consultancy 24x7 over WhatsApp. Drop a message anytime.</p>
-                            <a href="#" class="btn btn-primary">WhatsApp Contact</a>
+                            <h5 class="card-title"><span class="fas fa-comments"></span> Anytime Appointment</h5>
+                            <p class="card-text">Take appointments On-The-Go. Just drop a WhatsApp.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="facilities">
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <div class="card shadow">
+                        <img class="card-img" src="img/dummy.svg" alt="Card image cap">
+                        <div class="card-img-overlay">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <div class="card shadow">
+                        <img class="card-img" src="img/dummy.svg" alt="Card image cap">
+                        <div class="card-img-overlay">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <div class="card shadow">
+                        <img class="card-img" src="img/dummy.svg" alt="Card image cap">
+                        <div class="card-img-overlay">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <div class="card shadow">
+                        <img class="card-img" src="img/dummy.svg" alt="Card image cap">
+                        <div class="card-img-overlay">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+                    </div>
+                </div>
+
+                <div class="col-12"><br></div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="img/dummy.svg" alt="Card image cap">
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="img/dummy.svg" alt="Card image cap">
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="img/dummy.svg" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-12"><br></div>
         </div>
+
+        <img class="footer-img" src="img/footer.png" alt="footer img">
     </main>
     <footer>
-        <nav class="navbar">
+        <div class="container-fluid" id="main-footer">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <div id="map" class="shadow"></div>
+                </div>
+                <div class="col-md-4 col-xs-12 text-center">
+                    <br>
+                    <h3><strong>Rainbow Childcare</strong></h3>
+                    <h5>F6, First Floor, Sagun Casa<br>Near Prerna Teerth Deraser<br>Satellite, Ahmedabad (GUJ.)</h5>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar text-light">
             <span class="navbar-text">
-                Navbar text with an inline element
+                Copyright <span class="fas fa-copyright"></span> <strong>2018</strong>
+            </span>
+            <span class="navbar-text">
+                Made with <span class="fas fa-heart"></span> By <a href="//shreyansjain33.tk" target="_blank" class="text-dark">SK</a>
             </span>
         </nav>
     </footer>
@@ -96,5 +145,22 @@
 <script src="js/jq.slim.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    function initMap() {
+        var uluru = {
+                lat: 23.022760,
+                lng: 72.520507
+            },
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 19,
+                center: uluru
+            }),
+            marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHx8joILXcWn6jzfTDJYQ3XQ4NWZ0LlWE&callback=initMap"></script>
 
 </html>

@@ -46,7 +46,8 @@
 /* Common */
 
 @media screen {
-    .btn-primary {
+    .btn-primary,
+    .btn-reverse {
         background: #fec20b;
         color: #fff;
         font-weight: 600;
@@ -55,6 +56,9 @@
     }
     .btn-primary:hover {
         background: #26b4d7;
+    }
+    .card {
+        border: none;
     }
 }
 
@@ -95,11 +99,20 @@
 /* Header */
 
 @media screen {
-    header,
-    footer {
-        background: rgba(254, 194, 11, .98);
-        color: #efecee;
+    header {
+        background: transparent;
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, .5);
+    }
+    #navbarToggler {
+        z-index: 999;
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        box-shadow: 0 0 55px 0 rgba(10, 10, 10, .4);
+    }
+    #navbarToggler .bees {
+        top: -10px;
+        left: -30px;
     }
 }
 
@@ -108,26 +121,29 @@
 
 @media screen {
     main {
-        background: url(../img/flower_pat.png) repeat;
+        background: url(../img/dots_pat.png) repeat;
     }
 }
 
 
-/* Slider */
+/* Slider & Contact Section */
 
 @media screen {
     .contact-us {
         background: #f9e8b2;
+        margin-top: -10px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
     }
     .contact-us .row {
         background: url(../img/dots_pat.png) repeat;
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
     }
     .contact-us .card {
         border-radius: 25% 25% 25% 25%/60% 60% 40% 40%;
-        padding: 20px;
-        padding-left: 30px;
+        padding: 0 20px 0 30px;
+        color: #26b4d7;
     }
     .contact-us .card::before,
     .contact-us .card::after {
@@ -139,18 +155,18 @@
         border-radius: 100%;
     }
     .contact-us .card::before {
-        top: -30px;
+        top: -15px;
         left: 15%;
     }
     .contact-us .card::after {
-        bottom: 15px;
-        left: 15px;
+        bottom: -15px;
+        left: 15%;
     }
     .contact-us .card-body {
         z-index: 3;
     }
     .contact-us .bees {
-        top: 20px;
+        top: 15px;
     }
     .contact-us .bees-end {
         right: 150px;
@@ -158,16 +174,75 @@
 }
 
 
-/*  */
+/* Facilities */
 
-@media screen {}
+@media screen {
+    .facilities {
+        margin: 10px;
+        padding: 10px;
+        background: rgba(255, 255, 255, .98);
+        border-radius: 50px;
+    }
+    .facilities .row {
+        padding: 30px 10px;
+        background: url(../img/flower_pat.png) repeat;
+        background-size: 150px;
+    }
+    .facilities .card {
+        overflow: hidden;
+        transition: all .4s ease-in-out;
+    }
+    .facilities .card:hover img {
+        transform: scale(1.1);
+        transition: all .4s ease-in-out;
+    }
+    .facilities .card-img-overlay {
+        opacity: 0;
+        color: #fff;
+        transition: all .3s;
+    }
+    .facilities .card:hover .card-img-overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, .5);
+        transition: all .3s;
+    }
+}
 
 
 /* Footer */
 
 @media screen {
     footer {
-        margin-top: 30px;
+        color: #333;
+        border-top: 6px dashed #cce9ef;
+        background: #5abc2c;
+    }
+    .footer-img {
+        width: 100%;
+    }
+    footer #main-footer {
+        color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3) inset;
+    }
+    footer #map {
+        height: 250px;
+        width: 100%;
+        border-radius: 6px;
+    }
+    footer .navbar {
+        padding: 0 40px;
+        font-size: .8rem;
+        background: #cce9ef;
+        background: #4c941d;
+    }
+    footer .fa-heart {
+        font-size: medium;
+        color: rgba(180, 22, 25, 1.00);
+        -webkit-animation: heartbeat 1.6s infinite ease-in-out;
+        -moz-animation: heartbeat 1.6s infinite ease-in-out;
+        -ms-animation: heartbeat 1.6s infinite ease-in-out;
+        animation: heartbeat 1.6s infinite ease-in-out;
     }
 }
 
@@ -188,5 +263,24 @@
 @-webkit-keyframes play {
     100% {
         background-position: -120px;
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(.75)
+    }
+    20% {
+        transform: scale(1)
+    }
+    40% {
+        transform: scale(.75)
+    }
+    60% {
+        transform: scale(1)
+    }
+    100%,
+    80% {
+        transform: scale(.75)
     }
 }

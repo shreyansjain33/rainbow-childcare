@@ -2,22 +2,24 @@
  * url: shreyansjain33.tk
 */
 
+
 /*########################################*/
+
+
 /*Responsive Queries*/
 
-@media (min-width:1401px) {
-}
+@media (min-width:1401px) {}
 
-@media (max-width:1400px) {
-}
+@media (max-width:1400px) {}
 
-@media (max-width:1200px) {
-}
+@media (max-width:1200px) {}
 
-@media (max-width: 800px) and (orientation: landscape) {
-}
+@media (max-width: 800px) and (orientation: landscape) {}
 
 @media (max-width: 800px) {
+    .bees>span {
+        transform: scale(.65);
+    }
 }
 
 
